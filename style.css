@@ -1,0 +1,137 @@
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar Brand Styling */
+.navbar-brand {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #ffc107 !important;
+  letter-spacing: 1px;
+}
+
+/* Heading */
+h1 {
+  font-weight: bold;
+  color: #343a40;
+  margin-top: 30px;
+}
+
+h2 {
+  font-weight: bold;
+  margin: 40px 0 25px;
+  color: #007bff;
+  text-align: center;
+}
+
+/* Product Cards */
+.card {
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform .3s ease, box-shadow .3s ease;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.08);
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-text.price {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #28a745;
+  margin-bottom: 15px;
+}
+
+/* Add to Cart Button */
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 20px;
+  transition: background-color .3s ease, transform .2s ease;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+.card .btn {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .card .btn {
+    width: auto;
+  }
+}
+
+/* Cart Container Styling */
+#cart-container {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  padding: 10px;
+  width: 250px;
+  max-height: 400px;
+  overflow-y: auto;
+  position: fixed;
+  top: 80px;
+  right: 20px;
+  z-index: 999;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* Cart Item Styling */
+#cart-container div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+/* Buttons in Cart */
+#cart-container button {
+  border: none;
+  border-radius: 6px;
+  padding: 3px 8px;
+  margin-left: 3px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+  font-weight: bold;
+  transition: background-color .2s ease, transform .2s ease;
+}
+
+#cart-container button:hover {
+  background-color: #0056b3;
+  transform: translateY(-1px);
+}
+
+/* Total Price */
+#total {
+  font-weight: bold;
+  margin-top: 10px;
+  text-align: right;
+}
